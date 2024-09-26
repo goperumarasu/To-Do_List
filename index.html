@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+ 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+            <button id="dark-mode-toggle">Dark Mode</button>
+        </header>
+        
+        <section class="task-input">
+            <input type="text" id="task-title" placeholder="Add a new task...">
+            <input type="text" id="task-desc" placeholder="Add a description...">
+            <button id="add-task-btn">Add Task</button>
+        </section>
+        
+        <section class="task-filter">
+            <button id="all" data-filter="all" >All Tasks</button>
+            <button  id="active" data-filter="active">Active Tasks</button>
+            <button  id="completed" data-filter="completed" >Completed Tasks</button>
+        </section>
+        
+        <ul id="task-list">
+            <!-- Tasks will appear here -->
+        </ul>
+    </div>
+   
+      
+      
+
+    <script src="index.js"></script>
+</body>
+</html>
